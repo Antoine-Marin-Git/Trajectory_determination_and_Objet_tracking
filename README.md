@@ -7,3 +7,4 @@ perform spacecraft/aircraft visibility check when object is tracked from a groun
 
 # Coordinates Frames, Orbital Elements, Position and Velocity Determination
 
+Position and velocity vectors of a satellite, orbiting the Earth for instance, are related to its 6 orbital elements that describe in an unambiguous way its orbit. 
