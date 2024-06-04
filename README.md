@@ -10,4 +10,7 @@ perform spacecraft/aircraft visibility check when object is tracked from a groun
 Position and velocity vectors of a satellite, orbiting the Earth for instance, are related to its 6 orbital elements that describe in an unambiguous way its orbit
 as shown Fig. 1. 
 
+![alt text](Graphics/Orbit_Elem.PNG)
 
+For instance, a satellite evolving around the Earth with a position vector specigied 𝒓 = 6045𝒊 + 3490𝒋 + 0𝒌 𝑘𝑚 and a velocity vector specified 
+by 𝒗 = −2.457𝒊 + 6.618𝒋 + 2.533𝒌 𝑘𝑚/𝑠
