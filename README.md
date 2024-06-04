@@ -14,7 +14,7 @@ as shown Fig. 1.
 
 Fig 1. Orbital elements describing satellites orbits
 
-Often, the true anomaly \theta For instance, a satellite orbiting the Earth with a position vector specified by 𝒓 = 6045𝒊 + 3490𝒋 + 0𝒌 𝑘𝑚 and a velocity vector specified 
+Often, the true anomaly $\theta$ For instance, a satellite orbiting the Earth with a position vector specified by 𝒓 = 6045𝒊 + 3490𝒋 + 0𝒌 𝑘𝑚 and a velocity vector specified 
 by 𝒗 = −2.457𝒊 + 6.618𝒋 + 2.533𝒌 𝑘𝑚/𝑠 would have the following orbital elements derived from orbital mechanics equations:
 
 
