@@ -38,3 +38,5 @@ Groundtracks especially are of interest, as it is a projection of the spacecraft
 ![alt text](Graphics/ECEF.PNG)
 
 Fig 4. ECEF coordinates frame
+
+The code [ECI_2_ECEF.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/ECI_2_ECEF.m) is used to switch from one frame to another, using appropriate transformation based on rotation matrices implemented in [Rotation.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/Rotation.m)
