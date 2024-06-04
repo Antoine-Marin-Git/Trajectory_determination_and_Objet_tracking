@@ -1,4 +1,4 @@
-%% WORKS ONLY IF ASSUMING e = 0 (sphere)
+%% WORKS ONLY IF ASSUMING EARTH AS A SPHERE
 
 function [lat, long, alt] = ECI_GroundTrack(a, e, t, i, Omega, omega)
 
