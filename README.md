@@ -24,6 +24,7 @@ For instance, a satellite Sat-1 orbiting the Earth with a position vector specif
 by 𝒗 = −2.457𝒊 + 6.618𝒋 + 2.533𝒌 𝑘𝑚/𝑠 in ECI coordinates frame would have the following orbital elements Fig. 3 (cf code [ECI.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/ECI.m)):
 
 ![alt text](Graphics/Orb_elem_from_r_v.PNG)
+
 Fig 3. Orbital elements derived Sat-1 from position and velocity vectors 
 
 
