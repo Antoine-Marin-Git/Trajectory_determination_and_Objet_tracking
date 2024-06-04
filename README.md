@@ -7,16 +7,20 @@ perform spacecraft/aircraft visibility check when object is tracked from a groun
 
 # Coordinates Frames, Orbital Elements, Position and Velocity Determination
 
+The ECI and ECEF frames are both Earth-centered, but the ECEF frame takes into account the rotation of the Earth on its spin axis as described Fig. 1 and Fig. 2
+
+![alt text](Graphics/ECI.PNG)
+![alt text](Graphics/ECEF.PNG)
+
 Position and velocity vectors of a satellite, orbiting the Earth for instance, are related to its 6 orbital elements that describe in an unambiguous way its orbit
-as shown Fig. 1. 
+as shown Fig. 3. 
 
 ![alt text](Graphics/Orbit_Elem.PNG)
 
-Fig 1. Orbital elements describing satellites orbits
+Fig 3. Orbital elements describing satellites orbits
 
 Often, the true anomaly $\theta$ is not known, but the time $t$ after crossing perigee at which we want to know the spacecraft position and velocity vectors is.
 For instance, a satellite orbiting the Earth with a position vector specified by 𝒓 = 6045𝒊 + 3490𝒋 + 0𝒌 𝑘𝑚 and a velocity vector specified 
 by 𝒗 = −2.457𝒊 + 6.618𝒋 + 2.533𝒌 𝑘𝑚/𝑠 in ECI coordinates frame would have the following orbital elements derived from orbital mechanics equations implemented in 
-([ECI.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/ECI.m))
-
+[ECI.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/ECI.m)
 
