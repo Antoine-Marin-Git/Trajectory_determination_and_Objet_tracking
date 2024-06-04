@@ -25,6 +25,6 @@ by 𝒗 = −2.457𝒊 + 6.618𝒋 + 2.533𝒌 𝑘𝑚/𝑠 in ECI coordinates 
 
 ![alt text](Graphics/Orb_elem_from_r_v.PNG)
 
-Fig 3. Orbital elements derived Sat-1 from position and velocity vectors 
+Fig 3. Orbital elements derived from Sat-1 position and velocity vectors 
 
 
