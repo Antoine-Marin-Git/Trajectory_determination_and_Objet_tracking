@@ -62,7 +62,7 @@ Fig 5.b) ISS 3D Ground Track
 
 ![alt text](Graphics/ISS_GT3D_ECI.png)
 
-Fig 5.a) ISS Orbit Visualization
+Fig 5.c) ISS Orbit Visualization
 
 
 
