@@ -31,11 +31,16 @@ Conversely, the code [Reverse_ECI.m](https://github.com/Antoine-Marin-Git/Trajec
 # Object Tracking and Trajectory Visualization
 
 The previous tools and transformations are a fundamental basis to develop more advanced tool to enable aerial/spatial assets tracking and trajectory visualization. 
-Groundtracks especially are of interest, as it is a projection of the spacecraft orbit on the spinning Earth in terms of longitude and latitude, or even altitude aswell if one's want to visualize it in 3D (equivalent to using ECEF coordinates frame, shown Fig. 4)
-
+Groundtracks especially are of interest, as it is a projection of the spacecraft orbit on the spinning Earth in terms of longitude and latitude, or even altitude aswell if one wants to visualize it in 3D (equivalent to using ECEF coordinates frame, shown Fig. 4)
 
 ![alt text](Graphics/ECEF.PNG)
 
 Fig 4. ECEF coordinates frame
 
 The code [ECI_2_ECEF.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/ECI_2_ECEF.m) is used to switch from one frame to another, using appropriate transformation based on rotation matrices implemented in [Rotation.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/Rotation.m)
+
+
+
+
+
+
