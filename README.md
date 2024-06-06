@@ -64,6 +64,6 @@ Fig 5.b) ISS 3D Ground Track
 
 Fig 5.c) ISS Orbit Visualization
 
-
+Spacecraft/Aircraft are monitored by ground stations that can only communicate with the satellite during a fraction of the orbit or of the trajectory, when it is in the station's line of sight. 
 
 
