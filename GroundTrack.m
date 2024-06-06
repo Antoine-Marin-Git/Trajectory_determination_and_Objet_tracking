@@ -44,7 +44,7 @@ uistack(handle, 'bottom')
 % Add plot labels.
 xlabel('Longitude [Deg]');
 ylabel('Latitude [Deg]');
-title([satellite_name ' Ground Track - Antoine Marin']);
+title([satellite_name ' Ground Track']);
 
 hold off
 

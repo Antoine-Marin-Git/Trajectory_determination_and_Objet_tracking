@@ -6,7 +6,7 @@ end
 
 param = a*(1-e^2);
 
-% Derivation of theta at t = 9h 
+% Derivation of theta at t 
 
 M_0 = 0;
 

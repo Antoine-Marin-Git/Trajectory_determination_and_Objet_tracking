@@ -4,11 +4,11 @@ function [gamma] = GSVisibilityCheck(Gamma)
 
 R_earth = 6371e3; % m
 
-% Generation of the Ground Station vector
+% Generation of the Ground Station vector (Houston Mission Control Center)
 
 alt = 0; % m
-lat = 48.096; % deg
-long = -119.781; % deg
+lat = 29.551811; % deg
+long = -95.098228; % deg 
 
 M_ECEF_GS = [cos(deg2rad(long))*cos(deg2rad(lat)) % Rotation Matrix for the GS in ECEF
              sin(deg2rad(long))*cos(deg2rad(lat))
@@ -16,7 +16,7 @@ M_ECEF_GS = [cos(deg2rad(long))*cos(deg2rad(lat)) % Rotation Matrix for the GS i
 
 r_GS = (R_earth + alt)*M_ECEF_GS; % r_GS in ECEF
 
-disp('Ground Station ECEF position coordinates:');
+disp('Ground Station ECEF position vector coordinates:');
 disp(r_GS);
 
 % Generation of the Satellite vector and sorting of the valid values
