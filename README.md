@@ -41,7 +41,7 @@ Once the orbital elements of a satellite orbit are known, the code [ECI_2_ECEF.m
 
 We can use the ISS as a case study:
 
-Using the TLE of the 06/05/2024 at 13:08:21, 
+Using a recording duration of 30000s (1s step) and the following TLE of the 06/05/2024 at 13:08:21, 
 ```
 a_ISS = 6.796620707e6; % m
 e_ISS = 0.0006059; % (.)
@@ -50,5 +50,20 @@ i_ISS = 51.6439; % deg
 Omega_ISS = 11.3423; % deg
 omega_ISS = 278.6277; % deg
 ```
+the ground track in 2D and 3D can be visualized Fig 5.a) and 5.b). Here is added too the ground track in ECI for the orbit visualization Fig 5.c)
+
+![alt text](Graphics/ISS_GT.png)
+
+Fig 5.a) ISS Ground Track
+
+![alt text](Graphics/ISS_GT3D_ECEF.png)
+
+Fig 5.b) ISS 3D Ground Track
+
+![alt text](Graphics/ISS_GT3D_ECI.png)
+
+Fig 5.a) ISS Orbit Visualization
+
+
 
 
