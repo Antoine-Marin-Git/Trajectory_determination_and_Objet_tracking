@@ -37,8 +37,7 @@ Groundtracks especially are of interest, as it is a projection of the spacecraft
 
 Fig 4. ECEF coordinates frame
 
-The code [ECI_2_ECEF.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/ECI_2_ECEF.m) is used to switch from one frame to another, using appropriate transformation based on rotation matrices implemented in [Rotation.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/Rotation.m)
-
+Once the orbital elements of a satellite orbit are known, the code [ECI_2_ECEF.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/ECI_2_ECEF.m) is used to switch from the ECI frame to the ECEF frame at any given time $t$, using the Kepler equation mentioned before and appropriate transformations based on rotation matrices implemented in [Rotation.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/Rotation.m). To know the satellite trajectory over time, one has to store the satellite coordinates in ECEF for a desired duration, and plot it on either a planisphere or a 3D representation of Earth. The code [GroundTrack.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/GroundTrack.m) is used to visualize the satellite ground track on a planisphere (use [Blue_Marble_2002.png](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/Graphics/Blue_Marble_2002.png)), and the code [Plot3D_Earth.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/Plot3D_Earth.m) is used to visualize the satellite ground track on a 3D representation of the Earth (use [1024px-Land_ocean_ice_2048.jpg](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/Graphics/1024px-Land_ocean_ice_2048.jpg))
 
 
 
