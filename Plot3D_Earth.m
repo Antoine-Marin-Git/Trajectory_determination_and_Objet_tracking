@@ -43,7 +43,7 @@ hold on;
 
 % Generate Earth figure.
 globe = surf(x, y, -z, 'FaceColor', 'none', 'EdgeColor', 0.5*[1 1 1]);
-view([26,20]);
+view([70,20]);
 
 % Add texture to Earth figure.
 cdata = imread(image);
@@ -53,5 +53,14 @@ set(f,'color','k');
 
 % Plot the orbit.
 plot3(xs, ys, zs, 'r', 'Linewidth', 2);
+
+% Highlight the starting and ending points.
+scatter3(xs(1), ys(1), zs(1), ...
+        'filled', 'MarkerEdgeColor', [0 0 0], ...
+        'MarkerFaceColor', [0.4660 0.6740 0.1880])   % Start
+
+scatter3(xs(end), ys(end), zs(end), ...
+        'filled', 'MarkerEdgeColor', [0 0 0], ...
+        'MarkerFaceColor', [0.9290 0.6940 0.1250])   % End 
 
 end
