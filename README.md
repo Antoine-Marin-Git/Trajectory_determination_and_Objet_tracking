@@ -50,7 +50,7 @@ i_ISS = 51.6439; % deg
 Omega_ISS = 11.3423; % deg
 omega_ISS = 278.6277; % deg
 ```
-the ground track in 2D and 3D can be visualized Fig 5.a) and 5.b). Here is added too the ground track in ECI for the orbit visualization Fig 5.c)
+the ground track in 2D and 3D can be visualized Fig 5.a) and 5.b). Here is added too the ground track in ECI for the orbit visualization Fig 5.c). The start point is highlighted in green while the end point is highlighted in orange.
 
 ![alt text](Graphics/ISS_GT.png)
 
