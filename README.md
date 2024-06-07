@@ -6,7 +6,7 @@ perform spacecraft/aircraft visibility check when object is tracked from a groun
 
 # Coordinates Frames, Orbital Elements, Position and Velocity Determination
 
-A satellite's orbite, around the Earth for instance, is described by 6 orbital elements that qualify in an unambiguous way its orbit, as shown Fig. 2. 
+A satellite's orbite, around the Earth for instance, is described by 6 orbital elements that qualify it an unambiguous way, as shown Fig. 2. 
 
 ![alt text](Graphics/Orbit_Elem.PNG)
 
