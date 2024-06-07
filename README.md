@@ -70,11 +70,6 @@ Spacecraft/Aircraft are monitored by ground stations that can only communicate w
 
 Fig 6. Topocentric coordinates frame definition
 
-The tracked object is characterized by its azimuth $\alpha$ and elevation $\epsilon$, given by the following equations
-
-![alt text](Graphics/azimuth.PNG)
-![alt text](Graphics/elevation.PNG)
-
 The line of sight is then derived as shown in Fig 7.a), 7.b) and 7.c)
 
 ![alt text](Graphics/LOS_schema.PNG)
@@ -88,6 +83,11 @@ Fig 7.b)
 ![alt text](Graphics/LOS.PNG)
 
 Fig 7.c) 
+
+The tracked object is characterized by its azimuth $\alpha$ and elevation $\epsilon$, given by the following equations
+
+![alt text](Graphics/azimuth.PNG)
+![alt text](Graphics/elevation.PNG)
 
 To know the segment of the orbit where the asset is observable, and when it is therefore possible do downlink/uplink data, the idea is quite simple. An array ```Gamma``` is created that stores for each time step the time, and the three coordinates in ECEF (latitiude, longitude, and altitude). Given the station's line of sight and additional conditions (for instance the ground station can communicate with the moving object only if it is above $x^\circ$ above the horizon, i.e $\epsilon_{min} = x^\circ$), a subset of ```Gamma```, ```gamma```, is created that stores only the time and coordinates for which these conditions are satisfied. The subset ```gamma``` is created by the function [GSVisibilityCheck.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/GSVisibilityCheck.m), and the appropriate coordinates in terms of azimuth $\alpha$ and elevation $\epsilon$ are created by [GSsatLOS.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/GSsatLOS.m)
 
