@@ -64,30 +64,37 @@ Fig 5.b) ISS 3D Ground Track
 
 Fig 5.c) ISS Orbit Visualization
 
-Spacecraft/Aircraft are monitored by ground stations that can only communicate with the moving object during a fraction of the orbit or of the trajectory, when it is in the station's line of sight. The ECEF or ECI coordinates of the spacecraft/aircraft need to be translated into a coordinates frame that is suitable for the observation from the ground station. Such a frame is the Topocentric coordinates frame, referenced as TOPO in this project, and is defined in Fig. 6.a) and 6.b) where the origin is chosen to be the ground station. The tracked object is characterized by its azimuth $\alpha$ and elevation $\epsilon$.
-
-![alt text](Graphics/LOS_schema.PNG)
-
-Fig. 6.a) 
-
-![alt text](Graphics/LOS_schema2.PNG)
-
-Fig 6.b) 
-
-The line of sight from the ground station to the satellite is then derived as
-
-![alt text](Graphics/LOS.PNG)
-
-Where the code used to translate the coordinates from ECEF to TOPO and derive the line of sight is [GSVisibilityCheck.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/GSVisibilityCheck.m) using the appropriate rotation matrix shown Fig. 7
+Spacecraft/Aircraft are monitored by ground stations that can only communicate with the moving object during a fraction of the orbit or of the trajectory, when it is in the station's line of sight. The ECEF or ECI coordinates of the spacecraft/aircraft need to be translated into a coordinates frame that is suitable for the observation from the ground station. Such a frame is the Topocentric coordinates frame, referenced as TOPO in this project, and is defined in Fig. 6 where the origin is chosen to be the ground station. 
 
 ![alt text](Graphics/TOPO.PNG)
 
-Azimuth $\alpha$ and elevation $\epsilon$ are derived from TOPO coordinates using the following equations:
+Fig 6. Topocentric coordinates frame definition
+
+The tracked object is characterized by its azimuth $\alpha$ and elevation $\epsilon$, given by the following equations
 
 ![alt text](Graphics/azimuth.PNG)
 ![alt text](Graphics/elevation.PNG)
 
-To know the segment of the orbit where the asset is observable, and when it is therefore possible do downlink/uplink data, the idea is quite simple. An array ```Gamma``` is created that stores for each time step the time, and the three coordinates in ECEF (latitiude, longitude, and altitude). Given the station's line of sight and additional conditions (for instance the ground station can communicate with the moving object only if it is above 20$^\circ$ of elevation above the horizon), a subset of ```Gamma```, ```gamma```, is created that stores only the time and coordinates for which these conditions are satisfied.
+The line of sight is then derived as shown in Fig 7.a), 7.b) and 7.c)
+
+![alt text](Graphics/LOS_schema.PNG)
+
+Fig 7.a) 
+
+![alt text](Graphics/LOS_schema2.PNG)
+
+Fig 7.b) 
+
+![alt text](Graphics/LOS.PNG)
+
+Fig 7.c) 
+
+To know the segment of the orbit where the asset is observable, and when it is therefore possible do downlink/uplink data, the idea is quite simple. An array ```Gamma``` is created that stores for each time step the time, and the three coordinates in ECEF (latitiude, longitude, and altitude). Given the station's line of sight and additional conditions (for instance the ground station can communicate with the moving object only if it is above 20$^\circ$ above the horizon, i.e $\epsilon_min = 20^\circ$), a subset of ```Gamma```, ```gamma```, is created that stores only the time and coordinates for which these conditions are satisfied.
+
+Where the code used to translate the coordinates from ECEF to TOPO and derive the line of sight is [GSVisibilityCheck.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/GSVisibilityCheck.m) 
+
+
+
 
 
 
