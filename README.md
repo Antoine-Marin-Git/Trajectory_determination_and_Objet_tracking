@@ -6,16 +6,16 @@ perform spacecraft/aircraft visibility check when object is tracked from a groun
 
 # Coordinates Frames, Orbital Elements, Position and Velocity Determination
 
-The ECI coordinates frame is described Fig. 1. 
-
-![alt text](Graphics/ECI.PNG)
-Fig 1. ECI coordinates frame
-
 A satellite's orbite, around the Earth for instance, is described by 6 orbital elements that qualify in an unambiguous way its orbit, as shown Fig. 2. 
 
 ![alt text](Graphics/Orbit_Elem.PNG)
 
 Fig 2. Orbital elements describing satellites orbits
+
+The satellite's coordinates can be described by the Earth-Centered-Inertial, or ECI, coordinates frame, shown described Fig. 1. It is the description of the orbit in terms of coordinates relative to fixed-considered orthogonal axes intersecting at the center of the Earth.
+
+![alt text](Graphics/ECI.PNG)
+Fig 1. ECI coordinates frame
 
 Position and velocity vectors in ECI of the satellite are related to its orbital elements via equations derived from orbital mechanics. Often, the true anomaly
 $\theta$ is not known, but the time $t$ after crossing perigee at which we want to know the spacecraft position and velocity vectors is.
