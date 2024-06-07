@@ -89,7 +89,7 @@ Fig 7.b)
 
 Fig 7.c) 
 
-To know the segment of the orbit where the asset is observable, and when it is therefore possible do downlink/uplink data, the idea is quite simple. An array ```Gamma``` is created that stores for each time step the time, and the three coordinates in ECEF (latitiude, longitude, and altitude). Given the station's line of sight and additional conditions (for instance the ground station can communicate with the moving object only if it is above 20$^\circ$ above the horizon, i.e $\epsilon_min = 20^\circ$), a subset of ```Gamma```, ```gamma```, is created that stores only the time and coordinates for which these conditions are satisfied.
+To know the segment of the orbit where the asset is observable, and when it is therefore possible do downlink/uplink data, the idea is quite simple. An array ```Gamma``` is created that stores for each time step the time, and the three coordinates in ECEF (latitiude, longitude, and altitude). Given the station's line of sight and additional conditions (for instance the ground station can communicate with the moving object only if it is above 20 $^\circ$ above the horizon, i.e $\epsilon_{min} = 20^\circ$), a subset of ```Gamma```, ```gamma```, is created that stores only the time and coordinates for which these conditions are satisfied.
 
 Where the code used to translate the coordinates from ECEF to TOPO and derive the line of sight is [GSVisibilityCheck.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/GSVisibilityCheck.m) 
 
