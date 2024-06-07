@@ -78,6 +78,10 @@ The line of sight from the ground station to the satellite is then derived as
 
 ![alt text](Graphics/LOS.PNG)
 
+Where the code used to translate the coordinates from ECEF to TOPO and derive the line of sight is [GSVisibilityCheck.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/GSVisibilityCheck.m) using the appropriate rotation matrix shown Fig. 7
+
+![alt text](Graphics/TOPO.PNG)
+
 Azimuth $\alpha$ and elevation $\epsilon$ are derived from TOPO coordinates using the following equations:
 
 ![alt text](Graphics/azimuth.PNG)
