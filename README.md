@@ -64,6 +64,18 @@ Fig 5.b) ISS 3D Ground Track
 
 Fig 5.c) ISS Orbit Visualization
 
-Spacecraft/Aircraft are monitored by ground stations that can only communicate with the satellite during a fraction of the orbit or of the trajectory, when it is in the station's line of sight. 
+Spacecraft/Aircraft are monitored by ground stations that can only communicate with the moving object during a fraction of the orbit or of the trajectory, when it is in the station's line of sight. To know the segment of the orbit where the asset is observable, and when it is therefore possible do downlink/uplink data, the ECEF or ECI coordinates of the spacecraft/aircraft need to be translated into a coordinate frame that is suitable for the observation from the ground station. Such a frame is the topocentric coordinates frame, that we will name here TOPO, and is defined in Fig. 6 where the origin is chosen to be the ground station.
+
+![alt text](Graphics/LOS.png)
+
+Fig 5.c) ISS Orbit Visualization
+
+the idea is quite simple. An array Gamma is created that stores for each time step the time, and the three coordinates in ECEF (latitiude, longitude, and altitude). Given the station's line of sight and additional conditions (for instance the ground station can communicate with the moving object only if it is above 20$^\circ$ of elevation above the horizon), a subset of Gamma, named gamma, is created that stores only the time and coordinates for which these conditions are satisfied.
+
+Azimuth $\alpha$ and elevation $\epsilon$ are derived from TOPO coordinates using the following equations:
+
+![alt text](Graphics/azimuth.png)
+![alt text](Graphics/elevation.png)
+
 
 
