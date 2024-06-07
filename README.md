@@ -109,7 +109,7 @@ Fig 9. ISS 3D Ground Track and visible portion from Houston MCC
 
 ![alt text](Graphics/ISS_PolarPlot_HoustonMCC.png)
 
-Fig 10. ISS Polar Plot of the visible portion from Houston MCC
+Fig 10. ISS Polar Plot of the visible portion from Houston MCC (max elevation highlighted in blue)
 
 
 
