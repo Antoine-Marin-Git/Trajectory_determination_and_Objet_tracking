@@ -50,7 +50,7 @@ i_ISS = 51.6439; % deg
 Omega_ISS = 11.3423; % deg
 omega_ISS = 278.6277; % deg
 ```
-the ground track in 2D and 3D can be visualized Fig 5.a) and 5.b). Here is added too the ground track in ECI for the orbit visualization Fig 5.c). The start point is highlighted in green while the end point is highlighted in orange.
+the ground track in 2D and 3D can be visualized Fig 5.a) and 5.b). Here is added too the ground track in ECI ([ECI_GroundTrack.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/ECI_GroundTrack.m)) for the orbit visualization Fig 5.c). The start point is highlighted in green while the end point is highlighted in orange.
 
 ![alt text](Graphics/ISS_GT.png)
 
@@ -91,7 +91,7 @@ Fig 7.c)
 
 To know the segment of the orbit where the asset is observable, and when it is therefore possible do downlink/uplink data, the idea is quite simple. An array ```Gamma``` is created that stores for each time step the time, and the three coordinates in ECEF (latitiude, longitude, and altitude). Given the station's line of sight and additional conditions (for instance the ground station can communicate with the moving object only if it is above 20 $^\circ$ above the horizon, i.e $\epsilon_{min} = 20^\circ$), a subset of ```Gamma```, ```gamma```, is created that stores only the time and coordinates for which these conditions are satisfied. The subset ```gamma``` is created by the function [GSVisibilityCheck.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/GSVisibilityCheck.m), and the appropriate coordinates in terms of azimuth $\alpha$ and elevation $\epsilon$ are created by [GSsatLOS.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/GSsatLOS.m)
 
-Now that the segment of the trajectory where the asset is observable is known, the ground tracks can be updated to show the observable portion, and the path of the asset in the sky from the ground station can be visualized through a polar plot. For the ISS, Fig 8 to 10 show the 2D and 3D ground tracks, updated with the observable segment highlighted in cyan, along with the polar plot showing the ISS path in the sky of the Houston Mission Control Center, of which the coordinates are 
+Now that the segment of the trajectory where the asset is observable is known, the 2D and 3D ground tracks can be updated to show the observable portion (cf [GroundTrack_Visibility.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/GroundTrack_Visibility.m) and [Pplot3D_Earth_Visibility.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/Pplot3D_Earth_Visibility.m)), and the path of the asset in the sky from the ground station can be visualized through a polar plot. For the ISS, Fig 8 to 10 show the 2D and 3D ground tracks, updated with the observable segment highlighted in cyan, along with the polar plot showing the ISS path in the sky of the Houston Mission Control Center, of which the coordinates are 
 
 ```
 alt = 0; % m
