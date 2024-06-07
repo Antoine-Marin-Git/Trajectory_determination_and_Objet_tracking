@@ -91,6 +91,25 @@ Fig 7.c)
 
 To know the segment of the orbit where the asset is observable, and when it is therefore possible do downlink/uplink data, the idea is quite simple. An array ```Gamma``` is created that stores for each time step the time, and the three coordinates in ECEF (latitiude, longitude, and altitude). Given the station's line of sight and additional conditions (for instance the ground station can communicate with the moving object only if it is above 20 $^\circ$ above the horizon, i.e $\epsilon_{min} = 20^\circ$), a subset of ```Gamma```, ```gamma```, is created that stores only the time and coordinates for which these conditions are satisfied. The subset ```gamma``` is created by the function [GSVisibilityCheck.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/GSVisibilityCheck.m), and the appropriate coordinates in terms of azimuth $\alpha$ and elevation $\epsilon$ are created by [GSsatLOS.m](https://github.com/Antoine-Marin-Git/Trajectory_determination_and_Objet_tracking/tree/master/GSsatLOS.m)
 
+Now that the segment of the trajectory where the asset is observable is known, the ground tracks can be updated to show the observable portion, and the path of the asset in the sky from the ground station can be visualized through a polar plot. For the ISS, Fig 8 to 10 show the 2D and 3D ground tracks, updated with the observable segment highlighted in cyan, along with the polar plot showing the ISS path in the sky of the Houston Mission Control Center, of which the coordinates are 
+
+```
+alt = 0; % m
+lat = 29.551811; % deg
+long = -95.098228; % deg
+```
+
+![alt text](Graphics/ISS_GT_Visib.png)
+
+Fig 8. ISS Ground Track and visible portion from Houston MCC
+
+![alt text](Graphics/ISS_GT3D_Visib.png)
+
+Fig 9. ISS 3D Ground Track and visible portion from Houston MCC
+
+![alt text](Graphics/ISS_PolarPlot_HoustonMCC.png)
+
+Fig 10. ISS Polar Plot of the visible portion from Houston MCC
 
 
 
